@@ -1,0 +1,72 @@
+.list {
+  width: 100%;
+}
+
+.list__body {
+  width: 100%;
+}
+
+.list__list {
+  padding: 16px 6px;
+  width: 100%;
+  display: grid;
+  grid-gap: 22px;
+  grid-template-columns: repeat(auto-fill, 200px);
+}
+
+.list__item {
+  padding: 12px 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 200px;
+  height: 310px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.51);
+  border-radius: 12px;
+}
+
+.list__category {
+  font-weight: 400;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.65);
+  align-self: flex-end;
+}
+
+.list__img {
+
+}
+
+.list__name {
+  font-weight: 600;
+  font-size: 1.3rem;
+  align-self: center;
+}
+
+.list__price {
+  font-weight: 600;
+  font-size: 1.6rem;
+  align-self: center;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+.list__price:active {
+  color: whitesmoke;
+}
+
+.list__delete{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  cursor: pointer;
+}
+.list__delete:active{
+  fill: #ff0044;
+}
+
+@media (hover: hover) {
+  .list__price:hover {
+    padding: 0 6px;
+    background-color: rgba(0, 246, 2, 0.63);
+    border-radius: 6px;
+  }
+}

@@ -1,0 +1,43 @@
+.filter {
+  background-color: #0081ff;
+  border-radius: 6px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.66);
+  height: 60vh;
+  transition: all .5s ease;
+}
+
+.filter__body {
+  height: 100%;
+  padding: 26px 12px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-shadow: 1px 1px 1px black;
+  font-weight: 600;
+}
+
+.filter__title {
+  font-size: 2rem;
+}
+
+.filter__form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px
+}
+.filter__form > div:nth-last-child(2) {
+  flex: 1 1 auto;
+}
+
+@media (max-width: 900px) {
+  .filter {
+    position: absolute;
+    left: -100%;
+    z-index: 600;
+  }
+  .filter.active {
+    left: 0%;
+  }
+}
